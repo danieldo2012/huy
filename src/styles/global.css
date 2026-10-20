@@ -1,0 +1,262 @@
+/* ==========================================================================
+   GLOBAL STYLES & RESETS — GỬI MỘT CHÚT THƯƠNG
+   ========================================================================== */
+
+@import './variables.css';
+@import './animations.css';
+
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: 16px;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  scroll-behavior: smooth;
+  text-rendering: optimizeLegibility;
+}
+
+body {
+  font-family: var(--font-sans);
+  color: var(--color-text-brown);
+  background-color: var(--color-cream-light);
+  background-image: 
+    radial-gradient(circle at 10% 20%, rgba(246, 221, 229, 0.45) 0%, transparent 40%),
+    radial-gradient(circle at 90% 80%, rgba(236, 166, 184, 0.25) 0%, transparent 45%),
+    radial-gradient(circle at 50% 50%, rgba(255, 248, 242, 0.7) 0%, transparent 100%);
+  background-attachment: fixed;
+  min-height: 100vh;
+  line-height: 1.6;
+  overflow-x: hidden;
+}
+
+/* Custom Selection */
+::selection {
+  background-color: var(--color-pink-peach);
+  color: var(--color-text-deep);
+}
+
+/* Scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--color-cream-warm);
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--color-pink-peach);
+  border-radius: var(--radius-pill);
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--color-pink-accent);
+}
+
+/* Typography Helpers */
+h1, h2, h3, h4, h5, h6 {
+  color: var(--color-text-deep);
+  line-height: 1.25;
+  font-weight: 600;
+}
+
+.font-serif {
+  font-family: var(--font-serif);
+}
+
+.font-handwriting {
+  font-family: var(--font-handwriting);
+}
+
+.font-doodle {
+  font-family: var(--font-doodle);
+}
+
+/* Layout Container */
+.container {
+  width: 100%;
+  max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+@media (max-width: 480px) {
+  .container {
+    padding-left: 14px;
+    padding-right: 14px;
+  }
+}
+
+/* Common Buttons */
+.btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  padding: 12px 24px;
+  border-radius: var(--radius-pill);
+  font-size: 0.95rem;
+  font-weight: 600;
+  font-family: var(--font-sans);
+  cursor: pointer;
+  border: 1px solid transparent;
+  transition: all var(--transition-normal);
+  text-decoration: none;
+  user-select: none;
+  white-space: nowrap;
+}
+
+.btn:active {
+  transform: scale(0.98);
+}
+
+.btn:focus-visible {
+  outline: 2px solid var(--color-pink-accent);
+  outline-offset: 2px;
+}
+
+.btn-primary {
+  background: linear-gradient(135deg, var(--color-pink-accent), var(--color-pink-deep));
+  color: var(--color-white-ivory);
+  box-shadow: 0 4px 16px rgba(200, 94, 124, 0.35);
+}
+
+.btn-primary:hover {
+  background: linear-gradient(135deg, #d36987, #b54968);
+  box-shadow: 0 6px 20px rgba(200, 94, 124, 0.45);
+  transform: translateY(-2px);
+}
+
+.btn-secondary {
+  background: var(--color-white-ivory);
+  color: var(--color-pink-accent);
+  border: 1.5px solid var(--color-pink-peach);
+  box-shadow: var(--shadow-sm);
+}
+
+.btn-secondary:hover {
+  background: var(--color-pink-soft);
+  border-color: var(--color-pink-accent);
+  color: var(--color-pink-deep);
+  transform: translateY(-2px);
+}
+
+.btn-ghost {
+  background: transparent;
+  color: var(--color-text-brown);
+}
+
+.btn-ghost:hover {
+  background: rgba(236, 166, 184, 0.2);
+  color: var(--color-pink-deep);
+}
+
+.btn-sm {
+  padding: 8px 16px;
+  font-size: 0.85rem;
+}
+
+.btn-lg {
+  padding: 14px 32px;
+  font-size: 1.05rem;
+  box-shadow: 0 6px 22px rgba(200, 94, 124, 0.35);
+}
+
+/* Form Elements */
+.input, .textarea, .select {
+  width: 100%;
+  padding: 12px 16px;
+  border-radius: var(--radius-md);
+  border: 1.5px solid rgba(236, 166, 184, 0.6);
+  background: var(--color-white-ivory);
+  color: var(--color-text-deep);
+  font-family: var(--font-sans);
+  font-size: 0.95rem;
+  transition: all var(--transition-fast);
+  outline: none;
+}
+
+.input:focus, .textarea:focus, .select:focus {
+  border-color: var(--color-pink-accent);
+  box-shadow: 0 0 0 3px rgba(200, 94, 124, 0.15);
+  background: #ffffff;
+}
+
+.textarea {
+  min-height: 120px;
+  resize: vertical;
+  line-height: 1.6;
+}
+
+.form-label {
+  display: block;
+  font-size: 0.9rem;
+  font-weight: 600;
+  color: var(--color-text-deep);
+  margin-bottom: 6px;
+}
+
+.form-hint {
+  font-size: 0.8rem;
+  color: var(--color-text-muted);
+  margin-top: 4px;
+}
+
+/* Glass Card */
+.glass-panel {
+  background: rgba(255, 254, 252, 0.85);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border: 1px solid rgba(255, 255, 255, 0.8);
+  border-radius: var(--radius-lg);
+  box-shadow: var(--shadow-md);
+}
+
+/* Badge */
+.badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+  padding: 4px 12px;
+  border-radius: var(--radius-pill);
+  font-size: 0.78rem;
+  font-weight: 600;
+  background: var(--color-pink-pastel);
+  color: var(--color-pink-deep);
+  border: 1px solid rgba(236, 166, 184, 0.5);
+}
+
+/* Toast Container */
+.toast-container {
+  position: fixed;
+  bottom: 24px;
+  right: 24px;
+  z-index: 9999;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  pointer-events: none;
+}
+
+.toast {
+  pointer-events: auto;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 12px 20px;
+  border-radius: var(--radius-pill);
+  background: var(--color-white-ivory);
+  color: var(--color-text-deep);
+  box-shadow: 0 8px 30px rgba(104, 75, 80, 0.2);
+  border: 1.5px solid var(--color-pink-peach);
+  font-size: 0.9rem;
+  font-weight: 500;
+  animation: cardUnfoldReveal 0.3s var(--ease-spring);
+}

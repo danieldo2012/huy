@@ -1,0 +1,175 @@
+/* ==========================================================================
+   ANIMATIONS & KEYFRAMES — GỬI MỘT CHÚT THƯƠNG
+   ========================================================================== */
+
+/* Gentle Floating Petals & Hearts */
+@keyframes floatGentle {
+  0%, 100% {
+    transform: translateY(0px) rotate(0deg);
+  }
+  50% {
+    transform: translateY(-8px) rotate(3deg);
+  }
+}
+
+@keyframes floatReverse {
+  0%, 100% {
+    transform: translateY(0px) rotate(0deg);
+  }
+  50% {
+    transform: translateY(8px) rotate(-3deg);
+  }
+}
+
+@keyframes petalFall {
+  0% {
+    transform: translate3d(0, -10vh, 0) rotate(0deg);
+    opacity: 0;
+  }
+  15% {
+    opacity: 0.85;
+  }
+  85% {
+    opacity: 0.85;
+  }
+  100% {
+    transform: translate3d(80px, 110vh, 0) rotate(360deg);
+    opacity: 0;
+  }
+}
+
+@keyframes pulseHeart {
+  0% {
+    transform: scale(1);
+  }
+  14% {
+    transform: scale(1.15);
+  }
+  28% {
+    transform: scale(1);
+  }
+  42% {
+    transform: scale(1.15);
+  }
+  70% {
+    transform: scale(1);
+  }
+}
+
+@keyframes envelopeShake {
+  0%, 100% {
+    transform: translateX(0);
+  }
+  20% {
+    transform: translateX(-4px) rotate(-1deg);
+  }
+  40% {
+    transform: translateX(4px) rotate(1deg);
+  }
+  60% {
+    transform: translateX(-3px) rotate(-0.5deg);
+  }
+  80% {
+    transform: translateX(3px) rotate(0.5deg);
+  }
+}
+
+@keyframes flapOpen {
+  0% {
+    transform: rotateX(0deg);
+    z-index: 10;
+  }
+  50% {
+    transform: rotateX(-90deg);
+    z-index: 10;
+  }
+  100% {
+    transform: rotateX(-180deg);
+    z-index: 1;
+  }
+}
+
+@keyframes letterSlideUp {
+  0% {
+    transform: translateY(0);
+    opacity: 0.7;
+  }
+  40% {
+    transform: translateY(-90%);
+    opacity: 1;
+    z-index: 20;
+  }
+  100% {
+    transform: translateY(-20px) scale(1.02);
+    opacity: 1;
+    z-index: 30;
+  }
+}
+
+@keyframes cardUnfoldReveal {
+  0% {
+    transform: scale(0.85) translateY(30px);
+    opacity: 0;
+  }
+  60% {
+    transform: scale(1.02) translateY(-4px);
+    opacity: 1;
+  }
+  100% {
+    transform: scale(1) translateY(0);
+    opacity: 1;
+  }
+}
+
+@keyframes shimmerGlow {
+  0% {
+    background-position: -200% 0;
+  }
+  100% {
+    background-position: 200% 0;
+  }
+}
+
+@keyframes sparkleSpin {
+  0% {
+    transform: rotate(0deg) scale(0.6);
+    opacity: 0.3;
+  }
+  50% {
+    transform: rotate(180deg) scale(1.1);
+    opacity: 1;
+  }
+  100% {
+    transform: rotate(360deg) scale(0.6);
+    opacity: 0.3;
+  }
+}
+
+@keyframes sealPop {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.35) rotate(15deg);
+    opacity: 0.9;
+  }
+  100% {
+    transform: scale(0) rotate(45deg);
+    opacity: 0;
+  }
+}
+
+/* Reduced Motion Fallbacks */
+@media (prefers-reduced-motion: reduce) {
+  *, ::before, ::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+
+  .floating-petal,
+  .floating-heart {
+    display: none !important;
+  }
+}

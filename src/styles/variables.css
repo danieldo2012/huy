@@ -1,0 +1,67 @@
+/* ==========================================================================
+   DESIGN SYSTEM TOKENS — GỬI MỘT CHÚT THƯƠNG
+   Palette: Pastel Romantic, Soft Editorial, Warm & Emotional
+   ========================================================================== */
+
+:root {
+  /* Primary Pastel Palette */
+  --color-pink-pastel: #F6DDE5;
+  --color-pink-soft: #F9EBEF;
+  --color-pink-peach: #ECA6B8;
+  --color-pink-accent: #C85E7C;
+  --color-pink-deep: #A84260;
+  --color-rose-subtle: #F3BAC9;
+
+  /* Neutrals & Warm Creams */
+  --color-cream-light: #FFF8F2;
+  --color-cream-warm: #FAF1E8;
+  --color-white-ivory: #FFFEFC;
+  --color-white: #FFFFFF;
+  --color-sand: #EFE6DC;
+
+  /* Text & Contrast */
+  --color-text-brown: #684B50;
+  --color-text-deep: #473034;
+  --color-text-muted: #8F7277;
+  --color-text-light: #B49B9F;
+
+  /* Accents */
+  --color-gold-champagne: #E6C87C;
+  --color-gold-warm: #CFA448;
+  --color-lavender-mist: #EDE4F5;
+  --color-lavender-accent: #9A7FB8;
+  --color-sun-yellow: #FBE4A0;
+  --color-sun-warm: #F4C15A;
+  --color-leaf-green: #A3C9A8;
+
+  /* Status Colors */
+  --color-success: #67A678;
+  --color-error: #D95D6E;
+
+  /* Typography */
+  --font-sans: 'Be Vietnam Pro', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  --font-serif: 'Playfair Display', Georgia, serif;
+  --font-handwriting: 'Dancing Script', 'Caveat', cursive;
+  --font-doodle: 'Caveat', 'Dancing Script', cursive;
+
+  /* Shadows with warm rose undertones */
+  --shadow-sm: 0 2px 8px rgba(104, 75, 80, 0.06);
+  --shadow-md: 0 8px 24px rgba(200, 94, 124, 0.10);
+  --shadow-lg: 0 16px 40px rgba(104, 75, 80, 0.12);
+  --shadow-xl: 0 24px 60px rgba(200, 94, 124, 0.18);
+  --shadow-inner: inset 0 2px 6px rgba(104, 75, 80, 0.05);
+
+  /* Radius */
+  --radius-sm: 8px;
+  --radius-md: 14px;
+  --radius-lg: 20px;
+  --radius-xl: 32px;
+  --radius-pill: 9999px;
+
+  /* Transitions */
+  --ease-soft: cubic-bezier(0.25, 0.8, 0.25, 1);
+  --ease-spring: cubic-bezier(0.34, 1.56, 0.64, 1);
+  --transition-fast: 150ms var(--ease-soft);
+  --transition-normal: 280ms var(--ease-soft);
+  --transition-slow: 450ms var(--ease-soft);
+}
