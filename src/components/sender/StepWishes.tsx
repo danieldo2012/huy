@@ -410,7 +410,7 @@ export const StepWishes: React.FC<Props> = ({
               placeholder="Ví dụ: Gửi Người Phụ Nữ Tuyệt Vời Nhất Của Con"
               value={currentTitle}
               onChange={(e) => onUpdateTitle(e.target.value)}
-              maxLength={100}
+              maxLength={300}
             />
           </div>
 
@@ -423,10 +423,10 @@ export const StepWishes: React.FC<Props> = ({
               <span
                 style={{
                   fontSize: '0.8rem',
-                  color: currentMessage.length > 1200 ? '#D95D6E' : '#8F7277'
+                  color: currentMessage.length > 4500 ? '#D95D6E' : '#8F7277'
                 }}
               >
-                {currentMessage.length} / 1500 ký tự
+                {currentMessage.length} / 5000 ký tự
               </span>
             </div>
             <textarea
@@ -436,7 +436,7 @@ export const StepWishes: React.FC<Props> = ({
               placeholder="Viết những lời chân thành từ trái tim bạn tại đây..."
               value={currentMessage}
               onChange={(e) => onUpdateMessage(e.target.value)}
-              maxLength={1500}
+              maxLength={5000}
             />
           </div>
 
@@ -452,7 +452,7 @@ export const StepWishes: React.FC<Props> = ({
               placeholder="Ví dụ: P.S: Tối nay nhớ về sớm ăn cơm cùng cả nhà nhé!"
               value={currentNote}
               onChange={(e) => onUpdateNote(e.target.value)}
-              maxLength={200}
+              maxLength={1000}
             />
           </div>
 

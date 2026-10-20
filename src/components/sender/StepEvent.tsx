@@ -182,7 +182,7 @@ export const StepEvent: React.FC<Props> = ({
             placeholder="Ví dụ: Ngày tốt nghiệp, Kỷ niệm 100 ngày yêu, Cảm ơn vì tất cả..."
             value={customEventName}
             onChange={(e) => onChangeCustomName(e.target.value)}
-            maxLength={60}
+            maxLength={150}
           />
           <div className="form-hint">
             Tên dịp này sẽ được hiển thị trang trọng trên huy hiệu của tấm thiệp.

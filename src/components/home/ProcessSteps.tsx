@@ -17,7 +17,7 @@ const STEPS = [
   {
     step: '03',
     title: 'Trang trí thiệp',
-    desc: 'Chọn 1 trong 8 mẫu thiệp nghệ thuật với hoạt họa và họa tiết hoa lá.',
+    desc: 'Chọn 1 trong 18 mẫu thiệp nghệ thuật với hoạt họa và họa tiết hoa lá.',
     icon: Sparkles
   },
   {

@@ -3,9 +3,9 @@ import type { CardData, TemplateId, EventId, RecipientType } from '../types/card
 import { TEMPLATES } from '../data/templates';
 
 const VALID_TEMPLATE_IDS = new Set<string>(TEMPLATES.map((t) => t.id));
-const MAX_TITLE_LEN = 120;
-const MAX_MESSAGE_LEN = 1500;
-const MAX_NAME_LEN = 60;
+const MAX_TITLE_LEN = 300;
+const MAX_MESSAGE_LEN = 5000;
+const MAX_NAME_LEN = 120;
 
 /**
  * Sanitize text to remove potential script injections / HTML tags safely
@@ -54,7 +54,7 @@ export function validateCardData(obj: unknown): { isValid: boolean; card?: CardD
     senderName: sanitizeText(candidate.senderName || '').slice(0, MAX_NAME_LEN),
     title: sanitizeText(candidate.title || 'Gửi Một Chút Thương').slice(0, MAX_TITLE_LEN),
     message: sanitizeText(candidate.message),
-    optionalNote: candidate.optionalNote ? sanitizeText(candidate.optionalNote).slice(0, 300) : undefined,
+    optionalNote: candidate.optionalNote ? sanitizeText(candidate.optionalNote).slice(0, 1000) : undefined,
     templateId,
     colorTheme: candidate.colorTheme ? sanitizeText(candidate.colorTheme) : undefined,
     createdAt: candidate.createdAt || new Date().toISOString()

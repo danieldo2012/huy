@@ -147,7 +147,7 @@ export const StepRecipient: React.FC<Props> = ({
               placeholder="Ví dụ: Mẹ yêu, Bé Linh, Cậu bạn thân, Chị Mai..."
               value={recipientName}
               onChange={(e) => onChangeRecipientName(e.target.value)}
-              maxLength={50}
+              maxLength={120}
             />
             <div className="form-hint">
               Có thể để trống nếu bạn muốn lời chúc chung. Không hiển thị placeholder rỗng trong thiệp.
@@ -165,7 +165,7 @@ export const StepRecipient: React.FC<Props> = ({
               placeholder="Ví dụ: Con gái của Mẹ, Hoàng Nam, Một người thầm thương..."
               value={senderName}
               onChange={(e) => onChangeSenderName(e.target.value)}
-              maxLength={50}
+              maxLength={120}
             />
             <div className="form-hint">
               Sẽ xuất hiện ở phần chữ ký cuối thiệp. Có thể để trống nếu muốn ẩn danh bí mật.

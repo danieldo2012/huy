@@ -31,7 +31,7 @@ export const StepCustomize: React.FC<Props> = ({
           Bước 4: Chọn phong cách thiết kế thiệp
         </h2>
         <p style={{ color: '#8F7277', fontSize: '0.95rem' }}>
-          8 Mẫu thiệp được thiết kế tỉ mỉ với họa tiết, bố cục và kiểu chữ hoàn toàn riêng biệt.
+          18 Mẫu thiệp được thiết kế tỉ mỉ với họa tiết, bố cục và kiểu chữ hoàn toàn riêng biệt.
         </p>
       </div>
 

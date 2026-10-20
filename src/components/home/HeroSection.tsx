@@ -104,7 +104,7 @@ export const HeroSection: React.FC<Props> = ({ onStartCreating, onExploreTemplat
               style={{ padding: '16px 28px' }}
             >
               <Palette size={18} />
-              <span>Khám phá 8 mẫu thiệp</span>
+              <span>Khám phá 18 mẫu thiệp</span>
             </button>
           </div>
 

@@ -41,7 +41,17 @@ export type TemplateId =
   | 'minimal-elegance'
   | 'vintage-letter'
   | 'sakura-dream'
-  | 'warm-sunshine';
+  | 'warm-sunshine'
+  | 'starry-night'
+  | 'lavender-garden'
+  | 'ocean-breeze'
+  | 'autumn-maple'
+  | 'matcha-cozy'
+  | 'princess-tiara'
+  | 'retro-polaroid'
+  | 'lotus-pure'
+  | 'midnight-rosegold'
+  | 'cloud-dream';
 
 export interface CardData {
   v: number; // Schema version

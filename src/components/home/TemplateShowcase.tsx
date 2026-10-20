@@ -23,7 +23,7 @@ export const TemplateShowcase: React.FC<Props> = ({ onSelectTemplateToCreate }) 
               marginBottom: 10
             }}
           >
-            8 Mẫu thiệp với phong cách thiết kế thực sự khác nhau
+            18 Mẫu thiệp với phong cách thiết kế thực sự khác nhau
           </h2>
           <p style={{ color: '#8F7277', fontSize: '1rem', maxWidth: '620px', margin: '0 auto' }}>
             Không chỉ đơn giản là đổi màu sắc. Mỗi mẫu sở hữu layout, chất liệu đồ họa, kiểu chữ và linh hồn riêng biệt.

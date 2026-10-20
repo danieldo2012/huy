@@ -105,7 +105,7 @@ export const Footer: React.FC<Props> = ({ onNavigate }) => {
                   onClick={() => onNavigate('gallery')}
                   style={{ background: 'none', border: 'none', color: '#684B50', cursor: 'pointer', fontSize: '0.9rem', padding: 0 }}
                 >
-                  8 Mẫu thiệp nghệ thuật
+                  18 Mẫu thiệp nghệ thuật
                 </button>
               </li>
             </ul>

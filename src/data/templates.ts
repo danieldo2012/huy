@@ -88,5 +88,115 @@ export const TEMPLATES: TemplateDefinition[] = [
     backgroundColor: '#FFF9ED',
     fontFamily: "'Dancing Script', cursive",
     previewThumbnail: 'warm-sunshine'
+  },
+  {
+    id: 'starry-night',
+    name: 'Starry Night',
+    tagline: 'Đêm Ngàn Sao & Huyền Ảo',
+    description: 'Bầu trời đêm huyền bí, vầng trăng khuyết và ngàn ánh sao vàng lấp lánh soi sáng lời ước nguyện.',
+    badge: 'Huyền ảo & Say đắm',
+    primaryColor: '#E6B94E',
+    backgroundColor: '#191A30',
+    fontFamily: "'Playfair Display', serif",
+    previewThumbnail: 'starry-night'
+  },
+  {
+    id: 'lavender-garden',
+    name: 'Lavender Garden',
+    tagline: 'Thanh Khiết & Thư Thái',
+    description: 'Sắc tím oải hương Provence nước Pháp, nhành hoa thảo mộc êm đềm và thanh lịch.',
+    badge: 'Tím dịu dàng',
+    primaryColor: '#8E6BAF',
+    backgroundColor: '#F8F4FD',
+    fontFamily: "'Playfair Display', serif",
+    previewThumbnail: 'lavender-garden'
+  },
+  {
+    id: 'ocean-breeze',
+    name: 'Ocean Breeze',
+    tagline: 'Biển Xanh & Bình Yên',
+    description: 'Làn sóng biển xanh ngọc dịu mát, vỏ sò ngọc trai và sự êm đềm như lời vỗ về của đại dương.',
+    badge: 'Tươi mát & Tự do',
+    primaryColor: '#2C8898',
+    backgroundColor: '#F0F9FA',
+    fontFamily: "'Be Vietnam Pro', sans-serif",
+    previewThumbnail: 'ocean-breeze'
+  },
+  {
+    id: 'autumn-maple',
+    name: 'Autumn Maple',
+    tagline: 'Thu Vàng & Nồng Nàn',
+    description: 'Cánh lá phong đỏ rơi nhẹ trong chiều thu se lạnh, chất màu cam đất nung ấm áp và hoài niệm.',
+    badge: 'Mùa thu ấm áp',
+    primaryColor: '#C25E3E',
+    backgroundColor: '#FEF6EE',
+    fontFamily: "'Playfair Display', serif",
+    previewThumbnail: 'autumn-maple'
+  },
+  {
+    id: 'matcha-cozy',
+    name: 'Matcha Cozy',
+    tagline: 'Trà Chiều & Thảnh Thơi',
+    description: 'Tông xanh matcha mộc mạc phong cách quán trà Nhật Bản, nhẹ nhàng tĩnh lặng và an yên.',
+    badge: 'An yên & Mộc mạc',
+    primaryColor: '#537C51',
+    backgroundColor: '#F4F9F3',
+    fontFamily: "'Be Vietnam Pro', sans-serif",
+    previewThumbnail: 'matcha-cozy'
+  },
+  {
+    id: 'princess-tiara',
+    name: 'Princess Tiara',
+    tagline: 'Vương Miện & Kiêu Kỳ',
+    description: 'Vương miện công chúa đính ngọc trai, ren hoa hồng pastel quý phái dành cho cô gái bạn nâng niu nhất.',
+    badge: 'Nàng thơ & Công chúa',
+    primaryColor: '#D06085',
+    backgroundColor: '#FFF2F7',
+    fontFamily: "'Dancing Script', cursive",
+    previewThumbnail: 'princess-tiara'
+  },
+  {
+    id: 'retro-polaroid',
+    name: 'Retro Polaroid',
+    tagline: 'Cuốn Phim & Kỷ Niệm',
+    description: 'Khung ảnh Polaroid với băng dính washi tape đáng yêu, lưu giữ thước phim thanh xuân bất tận.',
+    badge: 'Hoài niệm & Kỷ niệm',
+    primaryColor: '#6B5B57',
+    backgroundColor: '#F8F6F2',
+    fontFamily: "'Caveat', cursive",
+    previewThumbnail: 'retro-polaroid'
+  },
+  {
+    id: 'lotus-pure',
+    name: 'Lotus Pure',
+    tagline: 'Sen Trắng & Thuần Khiết',
+    description: 'Đóa sen hồng ngát hương, nét đẹp truyền thống Việt Nam thanh cao, trang nhã và vẹn tròn.',
+    badge: 'Thuần khiết Việt Nam',
+    primaryColor: '#3F7B5E',
+    backgroundColor: '#F6FAF7',
+    fontFamily: "'Playfair Display', serif",
+    previewThumbnail: 'lotus-pure'
+  },
+  {
+    id: 'midnight-rosegold',
+    name: 'Midnight Rose Gold',
+    tagline: 'Dạ Tiệc & Ánh Kim',
+    description: 'Nền than chì sang trọng kết hợp viền vàng hồng lấp lánh như một bữa tiệc kỷ niệm thượng lưu.',
+    badge: 'Thượng lưu & Quyến rũ',
+    primaryColor: '#E8A3B3',
+    backgroundColor: '#281F26',
+    fontFamily: "'Playfair Display', serif",
+    previewThumbnail: 'midnight-rosegold'
+  },
+  {
+    id: 'cloud-dream',
+    name: 'Cloud Dream',
+    tagline: 'Mây Trắng & Bồng Bềnh',
+    description: 'Tầng mây bồng bềnh giữa bầu trời xanh trong vắt, cầu vồng pastel và cảm giác nhẹ tênh hạnh phúc.',
+    badge: 'Mộng mơ & Bay bổng',
+    primaryColor: '#5887D2',
+    backgroundColor: '#F2F8FE',
+    fontFamily: "'Caveat', cursive",
+    previewThumbnail: 'cloud-dream'
   }
 ];
